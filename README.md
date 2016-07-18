@@ -374,7 +374,7 @@ protected void onCreate(Bundle savedInstanceState) {}
 5)	注释应对代码进行准确的说明，不应存在歧义
 6)	在整个应用程序中，使用具有一致的标点和结构的统一样式来构造注释
 
-###六、	附件
+### 六、	附件
 
 下面为常见的英文单词缩写
 
