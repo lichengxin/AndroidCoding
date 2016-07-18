@@ -214,6 +214,7 @@ _ _ _
 
 ###四、	资源
 1、资源命名全部采用小写，各单词间以下划线区分
+
 2、	布局文件采用[前缀]_[功能模块].xml的命名方式
 例如：
 MainActivity的布局activity_main.xml
@@ -231,8 +232,10 @@ MainActivity的布局activity_main.xml
     例如：activity_main_head.xml、activity_main_bottom.xml
 注意：通用的包含项命名采用：项目名称缩写_描述.xml
 xxxx_title.xml
+
 3、layout中的id命名
 命名模式为：view缩写_模块名称_view的逻辑名称
+
 4、	资源文件（图片drawable/mipmap文件夹下）
 全部小写，采用下划线命名法，加前缀区分,命名模式：可加后缀 _small 表示小图, _big 表示大图，逻辑名称可由多个单词加下划线组成
 采用以下规则：
@@ -272,6 +275,7 @@ divider_white.png 白色分割线
 |sel_ok	|选择图标使用sel_功能_说明|
 注意：
 使用AndroidStudio的插件SelectorChapek可以快速生成selector，前提是命名要规范。
+
 5、	动画文件（anim文件夹下）
 全部小写，采用下划线命名法，加前缀区分。
 具体动画采用以下规则：
@@ -284,6 +288,7 @@ market_cart_remove.xml
 // 前面为动画的类型，后面为方向
 例如：
 fade_in	：淡入    fade_out：	淡出
+
 6、values中name命名 
 
 |类别	|命名|	示例|
@@ -293,7 +298,6 @@ fade_in	：淡入    fade_out：	淡出
 |styles	|styles的name命名使用驼峰命名法，采用以下规则：模块名+逻辑名称|	main_tabBottom|
 
 _ _ _
-
 
 ###五、	注释
 1、	文件注释
@@ -349,11 +353,14 @@ protected void onCreate(Bundle savedInstanceState) {}
 ```
 
 7、	switch……case的每个条件一般添加简短说明，例如：
+
  ![](http://chuantu.biz/t5/17/1468572758x3738746523.png)
 8、	如果if的条件大于2个，则必须写注释，例如：
+
  ![](http://chuantu.biz/t5/17/1468572720x3738746523.png)
 
 9、	若功能已完成，但存在效率等潜在问题时，使用XXX加以标记，例如：
+
  ![](http://chuantu.biz/t5/17/1468572677x3738746523.png)
 10、	规范的注释方法
 1)	一个工程应有一个统一的头文件注释，以说明整个工程的信息、创建日期、版本等等 
@@ -366,7 +373,7 @@ _ _ _
 
 
 ###六、附件
-1、 下面为常见的英文单词缩写:
+下面为常见的英文单词缩写:
 
 |名称|缩写|
 |------------------|-------------------------------|
