@@ -11,10 +11,10 @@
 1.	为什么需要开发规范
 编码规范对于程序员而言尤为重要，有以下几个原因：
 
-    1)	一个软件的生命周期中，80%的时间花费在于维护
-    2)	几乎没有任何一个软件，在其整个生命周期中，均由最初的开发人员来维护 
-    3)	编码规范可以改善软件的可读性，可以让程序员尽快而彻底地理解新的代码
-    4)	如果你将源码作为产品发布，就需要确任它是否被很好的打包并且清晰无误，一如你已构建的其它任何产品
+    1)	一个软件的生命周期中，80%的时间花费在于维护 \n
+    2)	几乎没有任何一个软件，在其整个生命周期中，均由最初的开发人员来维护 \n
+    3)	编码规范可以改善软件的可读性，可以让程序员尽快而彻底地理解新的代码\n
+    4)	如果你将源码作为产品发布，就需要确任它是否被很好的打包并且清晰无误，一如你已构建的其它任何产品\n
 2.	开发规范的作用
 
     1)	减少维护花费
@@ -374,24 +374,25 @@ _ _ _
 
 1. 下面为常见的英文单词缩写:
 
-    |名称|	缩写|
-    |----|---|
-    |icon|ic （主要用在app的图标）|
-    |color|	cl（主要用于颜色值）|
-    |divider|	di（主要用于分隔线，不仅包括Listview中的divider，还包括普通布局中的线）|
-    |selector|	sel（主要用于某一view多种状态，不仅包括Listview中的selector，还包括按钮的selector）|
-    |background	|bg（主要用于布局和子布局的背景）|
-    |buffer	|buf|
-    |control|	ctrl|
-    |delete	|del|
-    |document|	doc|
-    |error|	err|
-    |infomation	|info|
-    |initial|	init|
-    |image|	img|
-    |library|	lib|
-    |message|	msg|
-    |string|	str|
-    |temp|	tmp|
+
+|名称|	缩写|
+|------------------|-------------------------------|
+|icon|ic （主要用在app的图标）|
+|color|	cl（主要用于颜色值）|
+|divider|	di（主要用于分隔线，不仅包括Listview中的divider，还包括普通布局中的线）|
+|selector|	sel（主要用于某一view多种状态，不仅包括Listview中的selector，还包括按钮的selector）|
+|background	|bg（主要用于布局和子布局的背景）|
+|buffer	|buf|
+|control|	ctrl|
+|delete	|del|
+|document|	doc|
+|error|	err|
+|infomation	|info|
+|initial|	init|
+|image|	img|
+|library|	lib|
+|message|	msg|
+|string|	str|
+|temp|	tmp|
 
 
