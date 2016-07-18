@@ -34,27 +34,27 @@ _ _ _
 注：和而泰android项目全部以com.het.XX形式命名包括工程和库
 常见通用功能部分如下表：
 
-    |包名|	含义|
-    |:---------------------------------------------|:------------------------------------------------------|
-    |[主包名]. activity|	页面用到的Activity类 (activitie层级名用户界面层)|
-    |[主包名]. base|	基础共享的类  例如：BaseActivity、BaseFragment、BaseView等
-    |[主包名]. adapter	|页面用到的Adapter类 (适配器的类)
-    |[主包名]. api|	网络接口请求相关|
-    |[主包名]. constant|	常量配置|
-    |[主包名].view/widget|	自定义View等|
-    |[主包名].model/bean/entity|	实体类|
-    |[主包名]. db|	数据库操作相关所在的包|
-    |[主包名]. impl|	接口实现||
-    |[主包名]. service|	服务相关|
-    |[主包名]. manager|	管理类相关|
-    |[主包名]. receiver|	BroadcastReceiver服务|
-    |[主包名]. util/tools|	公共工具方法类|
+|包名|	含义|
+|------------------------------------|---------------------------------|
+|[主包名]. activity|	页面用到的Activity类 (activitie层级名用户界面层)|
+|[主包名]. base|	基础共享的类  例如：BaseActivity、BaseFragment、BaseView等
+|[主包名]. adapter	|页面用到的Adapter类 (适配器的类)
+|[主包名]. api|	网络接口请求相关|
+|[主包名]. constant|	常量配置|
+|[主包名].view/widget|	自定义View等|
+|[主包名].model/bean/entity|	实体类|
+|[主包名]. db|	数据库操作相关所在的包|
+|[主包名]. impl|	接口实现||
+|[主包名]. service|	服务相关|
+|[主包名]. manager|	管理类相关|
+|[主包名]. receiver|	BroadcastReceiver服务|
+|[主包名]. util/tools|	公共工具方法类|
     
 3、只需导入用到的类，不得用*导入包下所有类
 
-    ```
+
     例如：import foo.*; （×） import foo.Bar;（√）
-    ```
+
 
 4、导入类时，系统类在上方，自定义类在下方
 
@@ -93,12 +93,10 @@ class LoginActivity extends Activity{}
 
 4、	接口命名需要简单明了，长度不宜过长，建议在名称前面追加“I”
 
-    ```
     备注：
     I**Listener
     I**CallBack
     I**；
-```
 
 5、	自定义异常必须以Exception结尾
 6、	除for循环变量外，一律不得使用i、j、k等单字符作为变量名
@@ -110,12 +108,10 @@ int[] arrays;
 
 7、	常量、枚举等均采用大写形式，用下划线区分各单词
 
-    ```
 
     例如：
     static final String DEVICE_ID = "device_id"
     enum CounterType {NUMBER,DECIMAL,BOTH}
-    ```
 8、全局变量添加所有者前缀：实例成员变量前缀m（表示member），静态字段命名以s开头（表示static）
 例如：
 实例变量mRun
@@ -126,45 +122,45 @@ int[] arrays;
     全局名称：mBtnNext
     局部名称：btnNext
     常见控件前缀见附件UI控件表
-
-    |缩写	|全称	|含义|
-    |--------------|-----------------------|--------------------------------------------------------------|
-    |alc|	AnalogClock |	模拟时钟|
-    |btn|	Button|	按钮|
-    |cal|	CalendarView|日历|
-    |chb|	CheckBox|	复选框|
-    |chm|Chronometer|秒表|
-    |dgc|	DigitalClock|	数字时钟|
-    |dbk|	DatePicker|	日期选择框|
-    |et|	EditText|	编辑框|
-    |elv|ExpandableListView|	可扩展列表|
-    |glr|	Gallery|	画廊|
-    |gv|	GridView|	网格布局|
-    |iv|	ImageView|	图片控件|
-    |lv|ListView|	列表控件|
-    |mcr|MediaController|多媒体控制|
-    |npk|NumberPicker|	数字选择器|
-    |rdg|	RadioGroup|	单选按钮|
-    |rl|	RelativeLayout|	相对布局|
-    |tl|TableLayout	|表格布局|
-    |rdo|	RadioButton|	单选按钮|
-    |rtb|	RatingBar|	评分控件|
-    |scr|	ScrollView	|滚动控件|
-    |sdr|	SlidingDrawer	|滑动抽屉|
-    |sfc|	SurfaceView	|渲染视图|
-    |skb|SeekBar|	进度条|
-    |spn|Spinner	|下拉框|
-    |swh|	Switch	|开关|
-    |th|	TabHost	|标签页|
-    |tw|	TabWidget	|标签按钮|
-    |Tb	|ToggleButton	|切换按钮|
-    |tp	|TimePicker|	时间选择器|
-    |tv	|TextView	|文本框|
-    |vdo|VideoView	|视频|
-    |web|WebView	|网页控件||
-    |ll	|LinearLayout	|线性布局|
-    |fl|	FrameLayout	|帧布局|
-    |ibtn|	ImageButton|	图片按钮|
+    
+|缩写	|全称	|含义|
+|--------------|-----------|----------------|
+|alc|	AnalogClock |	模拟时钟|
+|btn|	Button|	按钮|
+|cal|	CalendarView|日历|
+|chb|	CheckBox|	复选框|
+|chm|Chronometer|秒表|
+|dgc|	DigitalClock|	数字时钟|
+|dbk|	DatePicker|	日期选择框|
+|et|	EditText|	编辑框|
+|elv|ExpandableListView|	可扩展列表|
+|glr|	Gallery|	画廊|
+|gv|	GridView|	网格布局|
+|iv|	ImageView|	图片控件|
+|lv|ListView|	列表控件|
+|mcr|MediaController|多媒体控制|
+|npk|NumberPicker|	数字选择器|
+|rdg|	RadioGroup|	单选按钮|
+|rl|	RelativeLayout|	相对布局|
+|tl|TableLayout	|表格布局|
+|rdo|	RadioButton|	单选按钮|
+|rtb|	RatingBar|	评分控件|
+|scr|	ScrollView	|滚动控件|
+|sdr|	SlidingDrawer	|滑动抽屉|
+|sfc|	SurfaceView	|渲染视图|
+|skb|SeekBar|	进度条|
+|spn|Spinner	|下拉框|
+|swh|	Switch	|开关|
+|th|	TabHost	|标签页|
+|tw|	TabWidget	|标签按钮|
+|Tb	|ToggleButton	|切换按钮|
+|tp	|TimePicker|	时间选择器|
+|tv	|TextView	|文本框|
+|vdo|VideoView	|视频|
+|web|WebView	|网页控件||
+|ll	|LinearLayout	|线性布局|
+|fl|	FrameLayout	|帧布局|
+|ibtn|	ImageButton|	图片按钮|
 
 10、常量一般使用final static修饰，根据需要使用可见性修饰符
 ```
@@ -175,18 +171,18 @@ public static final int VISIBLE = 0x00000000;
 11、一般方法名首字母小写，若由多个单词组成，则其后每个单词首字母大写，方法名通常是动词或动词短语。
 例如：
 
-    |方法	|说明|
-    |-----|----|
-    |initXX()|	初始化相关方法,使用init为前缀标识，如初始化布局initView()||
-    |isXX() checkXX()	|方法返回值为boolean型的请使用is或check为前缀标识|
-    |getXX()|	返回某个值的方法，使用get为前缀标识|
-    |handleXX()	|对数据进行处理的方法，尽量使用handle为前缀标识|
-    |displayXX()/showXX()|	弹出提示框和提示信息，使用display/show为前缀标识|
-    |saveXX()	|与保存数据相关的，使用save为前缀标识|
-    |resetXX()	|对数据重组的，使用reset前缀标识|
-    |clearXX()	|清除数据相关的|
-    |removeXXX()	|清除数据相关的|
-    |drawXXX()	|绘制数据或效果相关的，使用draw前缀标识|
+|方法	|说明|
+|-----|----|
+|initXX()|	初始化相关方法,使用init为前缀标识，如初始化布局initView()||
+|isXX() checkXX()	|方法返回值为boolean型的请使用is或check为前缀标识|
+|getXX()|	返回某个值的方法，使用get为前缀标识|
+|handleXX()	|对数据进行处理的方法，尽量使用handle为前缀标识|
+|displayXX()/showXX()|	弹出提示框和提示信息，使用display/show为前缀标识|
+|saveXX()	|与保存数据相关的，使用save为前缀标识|
+|resetXX()	|对数据重组的，使用reset前缀标识|
+|clearXX()	|清除数据相关的|
+|removeXXX()	|清除数据相关的|
+|drawXXX()	|绘制数据或效果相关的，使用draw前缀标识|
 
 12、	构造方法采用递增方式（参数多的写在后面）
 例如：
@@ -219,22 +215,22 @@ _ _ _
 ###四、	资源
 1、资源命名全部采用小写，各单词间以下划线区分
 2、	布局文件采用[前缀]_[功能模块].xml的命名方式
-    例如：
-    MainActivity的布局activity_main.xml
-    常见前缀如下表：
+例如：
+MainActivity的布局activity_main.xml
+常见前缀如下表：
 
-    |前缀名称|含义|
-    |----|----|
-    |activity_xx.xml|	Activity对应的布局|
-    |dialog_xx.xml	|自定义对话框的布局|
-    |item_xx.xml|	适配器视图中每个项目的布局|
-    |popup_xx.xml	|弹出框的布局|
-    |window_xx.xml|	悬浮窗的布局|
-    |fragment_xx.xml|	Fragment对应的布局
-    包含项命名：模块_(位置)描述.xml (include)
-        例如：activity_main_head.xml、activity_main_bottom.xml
-    注意：通用的包含项命名采用：项目名称缩写_描述.xml
-    xxxx_title.xml
+|前缀名称|含义|
+|----|----|
+|activity_xx.xml|	Activity对应的布局|
+|dialog_xx.xml	|自定义对话框的布局|
+|item_xx.xml|	适配器视图中每个项目的布局|
+|popup_xx.xml	|弹出框的布局|
+|window_xx.xml|	悬浮窗的布局|
+|fragment_xx.xml|	Fragment对应的布局
+包含项命名：模块_(位置)描述.xml (include)
+    例如：activity_main_head.xml、activity_main_bottom.xml
+注意：通用的包含项命名采用：项目名称缩写_描述.xml
+xxxx_title.xml
 3、layout中的id命名
 命名模式为：view缩写_模块名称_view的逻辑名称
 4、	资源文件（图片drawable/mipmap文件夹下）
@@ -257,25 +253,25 @@ bg_input.png 输入框背景
 divider_white.png 白色分割线
 常见属性后缀如下表：
 
-    |后缀名称|	含义|
-    |-----|-----|
-    |btn_xx_selected	|state_selected选中效果|
-    |btn_xx_checked	|state_checked选中效果|
-    |btn_xx_focused|	state_focused聚焦效果|
-    |btn_xx_pressed|	state_pressed按下状态时的图片|
-    |btn_xx_disabled|	禁用状态下的图片state_enabled (false)不可用效果|
-    |btn_xx_normal|	常规状态下的图片|
-    |btn_xx_hovered	|state_hovered悬停效果|
-    |btn_xx_checkable|	state_checkable可选效果|
-    |btn_xx_activated|	state_activated激活的|
-    |btn_xx_selector|	包含所有状态的选择器|
-    |bg_head|	背景图片使用bg_功能_说明|
-    |def_search_cell|	默认图片使用def_功能_说明|
-    |ic_more_help|	图标图片使用ic_功能_说明|
-    |di_list_line|	具有分隔特征的图片使用seg_功能_说明     (di: divider)|
-    |sel_ok	|选择图标使用sel_功能_说明|
-    注意：
-    使用AndroidStudio的插件SelectorChapek可以快速生成selector，前提是命名要规范。
+|后缀名称|	含义|
+|-----|-----|
+|btn_xx_selected	|state_selected选中效果|
+|btn_xx_checked	|state_checked选中效果|
+|btn_xx_focused|	state_focused聚焦效果|
+|btn_xx_pressed|	state_pressed按下状态时的图片|
+|btn_xx_disabled|	禁用状态下的图片state_enabled (false)不可用效果|
+|btn_xx_normal|	常规状态下的图片|
+|btn_xx_hovered	|state_hovered悬停效果|
+|btn_xx_checkable|	state_checkable可选效果|
+|btn_xx_activated|	state_activated激活的|
+|btn_xx_selector|	包含所有状态的选择器|
+|bg_head|	背景图片使用bg_功能_说明|
+|def_search_cell|	默认图片使用def_功能_说明|
+|ic_more_help|	图标图片使用ic_功能_说明|
+|di_list_line|	具有分隔特征的图片使用seg_功能_说明     (di: divider)|
+|sel_ok	|选择图标使用sel_功能_说明|
+注意：
+使用AndroidStudio的插件SelectorChapek可以快速生成selector，前提是命名要规范。
 5、	动画文件（anim文件夹下）
 全部小写，采用下划线命名法，加前缀区分。
 具体动画采用以下规则：
@@ -290,11 +286,11 @@ market_cart_remove.xml
 fade_in	：淡入    fade_out：	淡出
 6、values中name命名 
 
-    |类别	|命名|	示例|
-    |-----|----|-----|
-    |strings|strings的name命名使用下划线命名法采用以下规则：模块名+逻辑名称|	main_menu_about：主菜单按键文字， friend_title： 好友模块标题栏，friend_dialog_del：好友删除提示，login_check_email： 登录验证， bind_dialog_title： 绑定弹出框标题|
-    |colors|colors的name命名使用下划线命名法采用以下规则：模块名+逻辑名称 颜色	|friend_info_bg、course_bottom_bar_back、analysis_skin_value|
-    |styles	|styles的name命名使用驼峰命名法，采用以下规则：模块名+逻辑名称|	main_tabBottom|
+|类别	|命名|	示例|
+|-----|----|-----|
+|strings|strings的name命名使用下划线命名法采用以下规则：模块名+逻辑名称|	main_menu_about：主菜单按键文字， friend_title： 好友模块标题栏，friend_dialog_del：好友删除提示，login_check_email： 登录验证， bind_dialog_title： 绑定弹出框标题|
+|colors|colors的name命名使用下划线命名法采用以下规则：模块名+逻辑名称 颜色	|friend_info_bg、course_bottom_bar_back、analysis_skin_value|
+|styles	|styles的name命名使用驼峰命名法，采用以下规则：模块名+逻辑名称|	main_tabBottom|
 
 _ _ _
 
