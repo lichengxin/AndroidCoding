@@ -365,7 +365,6 @@ protected void onCreate(Bundle savedInstanceState) {}
 
 9、	若功能已完成，但存在效率等潜在问题时，使用XXX加以标记，例如：
 ![](http://chuantu.biz/t5/17/1468572677x3738746523.png)
-
 10、	规范的注释方法
 
 1)	一个工程应有一个统一的头文件注释，以说明整个工程的信息、创建日期、版本等等
@@ -377,7 +376,7 @@ protected void onCreate(Bundle savedInstanceState) {}
 
 ###六、	附件
 
-下面为常见的英文单词缩写:
+下面为常见的英文单词缩写
 
 |名称|缩写|
 |------------------|-------------------------------|
